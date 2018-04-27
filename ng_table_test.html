@@ -1,0 +1,23 @@
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Getting Started With ngTable Example</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/esvit/ng-table/master/ng-table.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://raw.github.com/esvit/ng-table/master/ng-table.css" />
+</head>
+<body>
+
+<div id="demo" ng-controller="MyCtrl">
+
+    <table ng-table class="table">
+    <tr ng-repeat="user in users">
+        <td data-title="'Name'">{{user.name}}</td>
+        <td data-title="'Age'">{{user.age}}</td>
+    </tr>
+    </table>
+    
+</div>
+
+</body>
+</html>
